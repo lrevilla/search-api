@@ -1,6 +1,8 @@
 {
   "version": 2,
   "projects": {
-    "search-api": "apps/search-api"
+    "search-api": "apps/search-api",
+    "opensearch": "libs/opensearch"
+
   }
 }

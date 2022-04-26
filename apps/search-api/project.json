@@ -9,20 +9,13 @@
       "options": {
         "outputPath": "dist/apps/search-api",
         "main": "apps/search-api/src/main.ts",
-        "tsConfig": "apps/search-api/tsconfig.app.json",
-        "assets": ["apps/search-api/src/assets"]
+        "tsConfig": "apps/search-api/tsconfig.app.json"
       },
       "configurations": {
         "production": {
           "optimization": true,
           "extractLicenses": true,
-          "inspect": false,
-          "fileReplacements": [
-            {
-              "replace": "apps/search-api/src/environments/environment.ts",
-              "with": "apps/search-api/src/environments/environment.prod.ts"
-            }
-          ]
+          "inspect": false
         }
       }
     },

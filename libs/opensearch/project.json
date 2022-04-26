@@ -1,0 +1,23 @@
+{
+  "root": "libs/opensearch",
+  "sourceRoot": "libs/opensearch/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/opensearch/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/opensearch"],
+      "options": {
+        "jestConfig": "libs/opensearch/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
